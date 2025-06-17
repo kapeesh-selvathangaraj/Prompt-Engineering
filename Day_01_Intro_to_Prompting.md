@@ -1,5 +1,7 @@
 # 📅 Day 01 – Introduction to Prompt Engineering
 
+Welcome to Day 01 of our journey into Prompt Engineering, a critical skill for maximizing the potential of Large Language Models (LLMs) in technical domains. This series aims to provide hands-on insights for CS students, developers, and AI practitioners alike.
+
 ## 🧠 Objective
 
 The objective of Day 01 is to establish a foundational understanding of **Prompt Engineering**, particularly in the context of programming, computer science concepts, and working with large language models (LLMs). Today's focus includes:
@@ -13,11 +15,11 @@ The objective of Day 01 is to establish a foundational understanding of **Prompt
 ## 📘 What is Prompt Engineering?
 
 **Prompt Engineering** is the practice of designing input instructions ("prompts") to elicit precise and high-quality responses from LLMs like GPT-4, Claude, and Gemini. In technical domains, prompt engineering becomes crucial for:
-- Code generation
-- Algorithm explanation
-- Debugging support
-- Documentation automation
-- Data interpretation and transformation
+- Code generation (from boilerplate to complex algorithms)
+- Algorithm explanation (e.g., step-by-step walkthroughs)
+- Debugging support (identifying logical and syntax errors)
+- Documentation automation (docstrings, inline comments)
+- Data interpretation and transformation (e.g., format conversion)
 
 ---
 
@@ -34,7 +36,7 @@ A good technical prompt includes:
 **Example Prompt:**
 ```
 Objective: Explain the time complexity of the following function.
-Code:
+Code Snippet:
 def binary_search(arr, target):
     left, right = 0, len(arr) - 1
     while left <= right:
@@ -46,7 +48,7 @@ def binary_search(arr, target):
         else:
             right = mid - 1
     return -1
-Output format: Explain step-by-step and give the final Big-O notation.
+Output Format: Explain step-by-step and give the final Big-O notation.
 ```
 
 ---
@@ -54,10 +56,11 @@ Output format: Explain step-by-step and give the final Big-O notation.
 ### 2. Importance for Computer Science Applications
 
 Prompt engineering for technical domains helps in:
-- Rapid prototyping (e.g., generating skeleton code or algorithms)
-- Teaching and explaining abstract concepts (e.g., recursion, complexity)
-- Code translation and documentation (e.g., Python → Java + docstring)
+- Rapid prototyping (e.g., generate skeleton code or scaffolding)
+- Teaching and explaining abstract concepts (e.g., recursion, time complexity)
+- Code translation and documentation (e.g., Python → Java + docstring generation)
 - Debugging assistance (e.g., find and fix logical bugs)
+- Evaluating design patterns and code architecture via simulated review
 
 ---
 
@@ -67,14 +70,15 @@ Prompt engineering for technical domains helps in:
 
 **Prompt:**
 ```
-Explain the time complexity of the following function in detail.
-
+Objective: Analyze algorithm performance.
+Code Snippet:
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):
         for j in range(0, n-i-1):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
+Output Format: Describe how many operations it performs and its Big-O time complexity.
 ```
 
 **Model Output:**
@@ -90,10 +94,11 @@ def bubble_sort(arr):
 
 **Prompt:**
 ```
-Find the bug in the following Python code and suggest a correction.
-
+Objective: Find and fix a bug in the following function.
+Code Snippet:
 def is_palindrome(s):
     return s == s.reverse()
+Output Format: Identify the problem and rewrite the correct function.
 ```
 
 **Model Output:**
@@ -128,6 +133,18 @@ def is_palindrome(s):
 | **Debug code**              | "Fix the bug in this recursive factorial function."          |
 | **Optimize code**           | "Refactor the following nested loop to improve performance." |
 | **Add comments/docstrings** | "Add meaningful docstrings to this Python class."            |
+
+---
+
+## ✍️ Try It Yourself
+
+Take a moment to write a prompt for a simple task, like explaining recursion. Think about:
+- **Objective**: What is the task?
+- **Context**: Any background details to share?
+- **Code Snippet**: Include example input if needed.
+- **Output Format**: What should the model return?
+
+This exercise helps solidify prompt structure and clarity.
 
 ---
 
